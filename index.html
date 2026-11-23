@@ -1,0 +1,194 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Armin Karimi Birgani · Game Developer</title>
+  <meta name="description" content="Armin Karimi Birgani, gameplay programmer. Cut the Rope 3, Metro Awakening VR, Hubris VR and more, in Unity and Unreal." />
+  <meta name="theme-color" content="#07060d" />
+  <meta property="og:title" content="Armin Karimi Birgani · Game Developer" />
+  <meta property="og:description" content="Gameplay programmer working in Unity and Unreal. Studio, VR, university and personal projects." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="assets/wayward-shoals.jpg" />
+  <link rel="icon" href="assets/logo.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <a class="skip" href="#projects">Skip to projects</a>
+  <div class="progress" aria-hidden="true"></div>
+
+  <header class="nav">
+    <a class="brand" href="#top" aria-label="Back to top">
+      <img src="assets/logo.png" alt="" width="34" height="29" />
+      <span>Armin<b>.</b></span>
+    </a>
+    <button class="menu-btn" aria-label="Open menu" aria-expanded="false"><span></span><span></span></button>
+    <nav class="links">
+      <a href="#experience">Experience</a>
+      <a href="#projects">Projects</a>
+      <a href="#about">About</a>
+      <a href="#contact" class="pill">Contact</a>
+    </nav>
+  </header>
+
+  <main id="top">
+    <!-- HERO -->
+    <section class="hero">
+      <canvas id="stars" aria-hidden="true"></canvas>
+      <div class="hero-inner">
+        <p class="eyebrow mono reveal">// player one has entered the game</p>
+        <h1 class="hero-title">
+          <span class="line"><span class="split">Armin Karimi</span></span>
+          <span class="line"><span class="split grad">Birgani</span></span>
+        </h1>
+        <p class="hero-role reveal">
+          Gameplay programmer building <span class="typed" aria-live="polite"></span><span class="caret">_</span>
+        </p>
+        <div class="hero-cta reveal">
+          <a class="btn primary" href="#projects">See my work</a>
+          <a class="btn ghost" href="https://drive.google.com/file/d/14weueYZEeDKkFOAxW0q2mMAXTslSRXgp/view?usp=sharing" target="_blank" rel="noopener">Resume ↗</a>
+        </div>
+        <ul class="stats reveal">
+          <li><b data-count="12">0</b><span>projects on show</span></li>
+          <li><b data-count="5">0</b><span>game studios</span></li>
+          <li><b data-count="2">0</b><span>engines, plus custom C++</span></li>
+        </ul>
+      </div>
+      <a class="scroll-hint" href="#experience" aria-label="Scroll down"><span></span></a>
+      <p class="konami mono" aria-hidden="true">↑↑↓↓←→←→BA</p>
+    </section>
+
+    <!-- EXPERIENCE -->
+    <section id="experience" class="section">
+      <header class="section-head reveal">
+        <p class="mono kicker">01 — Experience</p>
+        <h2>Where I've worked</h2>
+      </header>
+      <ol class="timeline">
+        <li class="reveal">
+          <span class="dot"></span>
+          <div>
+            <h3>Paladin Studios</h3>
+            <p class="meta mono">Junior Gameplay Programmer · ~1.5 years</p>
+            <p>Gameplay, prototyping and upkeep on <em>Cut the Rope 3</em> for Apple Arcade and Vision Pro, plus race challenges for <em>Wayward Shoals</em>.</p>
+          </div>
+        </li>
+        <li class="reveal">
+          <span class="dot"></span>
+          <div>
+            <h3>Vertigo Studios Amsterdam</h3>
+            <p class="meta mono">VR Programmer · Internship</p>
+            <p>Sense of weight and the spawning system for <em>Metro Awakening VR</em> in Unreal Engine 5.</p>
+          </div>
+        </li>
+        <li class="reveal">
+          <span class="dot"></span>
+          <div>
+            <h3>Cyborn</h3>
+            <p class="meta mono">VR Gameplay Programmer · Internship</p>
+            <p>Interactable props, VR puzzles, mechanics and a core level for <em>Hubris</em>.</p>
+          </div>
+        </li>
+        <li class="reveal">
+          <span class="dot"></span>
+          <div>
+            <h3>Azerion &amp; GamePoint</h3>
+            <p class="meta mono">Game Programmer · Internships</p>
+            <p>First taste of working as a programmer inside two large Dutch game companies.</p>
+          </div>
+        </li>
+        <li class="reveal">
+          <span class="dot"></span>
+          <div>
+            <h3>Breda University of Applied Sciences</h3>
+            <p class="meta mono">Game Development · Graduated</p>
+            <p>Team projects in Unity, Unreal and two custom C++ engines, all run with Scrum.</p>
+          </div>
+        </li>
+      </ol>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects" class="section">
+      <header class="section-head reveal">
+        <p class="mono kicker">02 — Projects</p>
+        <h2>Things I've built</h2>
+      </header>
+      <div class="filters reveal" role="tablist" aria-label="Filter projects">
+        <button class="chip active" data-filter="all" role="tab" aria-selected="true">All</button>
+        <button class="chip" data-filter="studio" role="tab" aria-selected="false">Studio</button>
+        <button class="chip" data-filter="university" role="tab" aria-selected="false">University</button>
+        <button class="chip" data-filter="personal" role="tab" aria-selected="false">Personal</button>
+      </div>
+      <div class="grid" id="grid"></div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="section about">
+      <div class="photo reveal">
+        <div class="frame">
+          <img src="assets/armin.jpg" alt="Armin standing in a pastel outfit against a brown studio backdrop" loading="lazy" width="800" height="1200" />
+        </div>
+        <span class="tag mono">a man of many colors</span>
+      </div>
+      <div class="about-text">
+        <header class="section-head reveal">
+          <p class="mono kicker">03 — About</p>
+          <h2>Howdy! I'm Armin.</h2>
+        </header>
+        <p class="reveal">I'm a game developer with about 1.5 years at Paladin Studios, and a graduate of Breda University of Applied Sciences. Making games has been a dream since I was a kid taking games apart, modding them and building custom maps to see how they tick.</p>
+        <p class="reveal">I'm always looking to grow. Giving and getting feedback matters a lot to me, and I like reviewing code with my colleagues so we all catch more. I aim for code that is loosely coupled and easy to read, and I work comfortably in English or Dutch.</p>
+        <p class="reveal">Group projects are my favourite: a room full of friendly, talented people who care as much as I do. Outside of work I game a lot, and I like trying new things: making clothes, photography, video, music and drawing.</p>
+
+        <div class="skills reveal" id="skills"></div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section contact">
+      <p class="mono kicker reveal">04 — Contact</p>
+      <h2 class="big reveal">Let's make<br /><span class="grad">something fun.</span></h2>
+      <p class="reveal">Open to gameplay and VR programming roles. Say hi in English or Dutch.</p>
+      <div class="contact-row reveal">
+        <button class="btn primary copy" data-email="armin.rkb@gmail.com">
+          <span class="copy-label">armin.rkb@gmail.com</span>
+          <span class="copy-hint mono">click to copy</span>
+        </button>
+      </div>
+      <ul class="socials reveal">
+        <li><a href="https://github.com/Armin-rkb" target="_blank" rel="noopener">GitHub ↗</a></li>
+        <li><a href="https://www.linkedin.com/in/armin-rkb/" target="_blank" rel="noopener">LinkedIn ↗</a></li>
+        <li><a href="https://armini.itch.io/" target="_blank" rel="noopener">itch.io ↗</a></li>
+        <li><a href="https://drive.google.com/file/d/14weueYZEeDKkFOAxW0q2mMAXTslSRXgp/view?usp=sharing" target="_blank" rel="noopener">Resume ↗</a></li>
+      </ul>
+    </section>
+  </main>
+
+  <footer class="footer mono">
+    <span>© <span id="year"></span> Armin Karimi Birgani</span>
+    <span>Hand-built, no Webflow · <a href="#top">back to top ↑</a></span>
+  </footer>
+
+  <!-- Project detail dialog -->
+  <dialog id="modal" aria-labelledby="m-title">
+    <button class="close" aria-label="Close">✕</button>
+    <div class="m-media"></div>
+    <div class="m-body">
+      <p class="m-kind mono"></p>
+      <h3 id="m-title"></h3>
+      <dl class="m-facts"></dl>
+      <h4 class="mono">What I did</h4>
+      <ul class="m-points"></ul>
+      <div class="m-link"></div>
+    </div>
+  </dialog>
+
+  <div class="toast mono" role="status" aria-live="polite"></div>
+
+  <script src="data.js"></script>
+  <script src="main.js"></script>
+</body>
+</html>
